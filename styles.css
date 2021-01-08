@@ -1,0 +1,95 @@
+body{
+    
+    background-color: #f9f7f7;
+    color: #112d4e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border:2 px solid #112d4e;
+    color: #112d4e;
+    font-size: 1rem;
+    padding:15px;
+    
+}
+button:hover{
+    background-color:#112d4e;
+    color: #dbe2ef;
+    
+}
+.box{
+    background-color: #3f72af;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+.box:hover{
+    border: solid #112d4e 3px;
+}
+
+table, tr, td, thead{
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding:0.5rem;
+    
+    
+}
+
+
+
+.fas{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.fa-question{
+    font-size:0.3rem;
+    padding:4px;
+    border-radius: 100%;
+    background-color: #112d4e;
+    color:  #dbe2ef
+}
+
+
+
+
+#table-container{
+    grid-area: scoreTable;
+    align-content: center;
+    
+    
+}
+#score-table{
+    width: auto;
+    align-self: center;
+}
+#move-record-text{
+    grid-area: mr;
+
+}
+#time-record-text{
+    grid-area: tr;
+}
+#grid-wrapper{
+    
+    margin: auto;
+    width:1000px;
+    height:500px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px; 
+    grid-template-areas:     
+    
+
+    "mr mr box0 box1 box2 box3 . scoreTable"
+    "tr tr box7 box6 box5 box4 . scoreTable"
+    ". . box8 box9 box10 box11 . scoreTable"
+    ". . box15 box14 box13 box12 . scoreTable"
+    ". . box16 box17 box18 box19 . scoreTable";
+}
+

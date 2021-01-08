@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel = "stylesheet" href = "styles.css">
+   <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6495d9501d.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <h1 id = "title">Memory game</h1>
+    <h3 >Current moves: <span id = "moveCounter" >0</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Time taken: <span id = "runningTimer">0</span> seconds &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Player efficiency: <span id ="playerEfficiency">0</span>%&nbsp;&nbsp;<i class="fas fa-question"></i></h3>
+    <p id = "explainer-text">How often your moves find a pair, calculated across every game you play.</p>
+    
+    <button type ="submit" id = "startButton"> Start </button>
+    <button type ="submit" id = "resetButton"> Reset </button>
+    
+    
+    <div id = "grid-wrapper">
+        <p id = "move-record-text">New record for fewest moves:<span id ="move-record-value">0</span>. Well done!</p>
+    <p id = "time-record-text">New record for quickest time:<span id ="time-record-value">0</span> seconds. Well done!</p>
+        <div id = "box0" class = "box"></div>
+        <div id = "box1" class = "box"></div>
+        <div id = "box2" class = "box"></div>
+        <div id = "box3" class = "box"></div>
+        <div id = "box4" class = "box"></div>
+        <div id = "box5" class = "box"></div>
+        <div id = "box6" class = "box"></div>
+        <div id = "box7" class = "box"></div>
+        <div id = "box8" class = "box"></div>
+        <div id = "box9" class = "box"></div>
+        <div id = "box10" class = "box"></div>
+        <div id = "box11" class = "box"></div>
+        <div id = "box12" class = "box"></div>
+        <div id = "box13" class = "box"></div>
+        <div id = "box14" class = "box"></div>
+        <div id = "box15" class = "box"></div>
+        <div id = "box16" class = "box"></div>
+        <div id = "box17" class = "box"></div>
+        <div id = "box18" class = "box"></div>
+        <div id = "box19" class = "box"></div>
+        
+
+        <div id = "table-container">
+        <table id ="score-table">
+            <thead><h3>Previous scores</h3></thead>
+            <thead>
+                <td>Moves</td>
+                <td>Time taken</td>
+            </thead>
+            <tbody>
+            
+        </tbody>
+        </table>
+    </div>
+
+
+
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
